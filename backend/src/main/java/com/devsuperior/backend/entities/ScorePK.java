@@ -1,14 +1,14 @@
-package com.devsuperior.entities;
+package com.devsuperior.backend.entities;
 
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import java.io.Serial;
+
 import java.io.Serializable;
 
 @Embeddable
 public class ScorePK implements Serializable {
-    @Serial
+
     private static final long serialVersionUID = 1L;
     @ManyToOne
     @JoinColumn(name = "movie_id")

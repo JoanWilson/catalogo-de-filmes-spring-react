@@ -1,4 +1,4 @@
-package com.devsuperior.entities;
+package com.devsuperior.backend.entities;
 
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
