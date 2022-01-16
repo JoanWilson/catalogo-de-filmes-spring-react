@@ -31,6 +31,7 @@ function FormCard({ movieId } : Props) {
         const score = (event.target as any).score.value; 
 
         if (!validateEmail(email)) {
+            window.alert('Esse email já foi usado!');
             return;
         }
 
@@ -46,6 +47,7 @@ function FormCard({ movieId } : Props) {
         }
 
         axios(config).then(response => {
+            window.alert('Avaliado com sucesso!');
             navigate("/");
         });
 
