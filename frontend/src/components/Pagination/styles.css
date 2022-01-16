@@ -27,20 +27,21 @@
     align-items: center;
     border: 1px solid var(--color-primary);
     cursor: pointer;
-    color: #56c041;
+    color: var(--color-primary);
 }
 
 .dsmovie-pagination-button svg {
-    filter: brightness(0) saturate(100%) invert(26%) sepia(0%) green saturate(7395%) hue-rotate(234deg) brightness(89%) contrast(92%);
+    filter: brightness(0) saturate(100%) invert(26%) green saturate(7395%) hue-rotate(234deg) brightness(89%) contrast(92%);
 }
 
 .dsmovie-pagination-button:disabled {
+    color: #c2c2c2;
     border: 1px solid #c2c2c2;
     cursor: unset;
 }
 
 .dsmovie-pagination-button:disabled svg {
-    filter: none;
+    filter: saturate(0%);
 }
 
 .dsmovie-pagination-container p {
