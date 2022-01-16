@@ -1,4 +1,4 @@
-package com.devsuperior.backend.config;
+package com.devsuperior.wilsonmovies.config;
 
 import java.util.Arrays;
 

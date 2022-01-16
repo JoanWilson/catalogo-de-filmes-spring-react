@@ -1,6 +1,6 @@
-package com.devsuperior.backend.dto;
+package com.devsuperior.wilsonmovies.dto;
 
-import com.devsuperior.backend.entities.Movie;
+import com.devsuperior.wilsonmovies.entities.Movie;
 
 public class MovieDTO {
 

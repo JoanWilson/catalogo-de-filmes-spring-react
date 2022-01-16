@@ -1,4 +1,4 @@
-package com.devsuperior.backend.entities;
+package com.devsuperior.wilsonmovies.entities;
 
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;

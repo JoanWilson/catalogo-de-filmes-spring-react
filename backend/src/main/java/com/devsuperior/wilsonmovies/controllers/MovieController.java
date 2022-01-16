@@ -1,7 +1,7 @@
-package com.devsuperior.backend.controllers;
+package com.devsuperior.wilsonmovies.controllers;
 
-import com.devsuperior.backend.dto.MovieDTO;
-import com.devsuperior.backend.services.MovieService;
+import com.devsuperior.wilsonmovies.dto.MovieDTO;
+import com.devsuperior.wilsonmovies.services.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

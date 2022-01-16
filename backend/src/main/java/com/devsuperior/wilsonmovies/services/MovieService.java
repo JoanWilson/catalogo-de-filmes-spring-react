@@ -1,15 +1,13 @@
-package com.devsuperior.backend.services;
+package com.devsuperior.wilsonmovies.services;
 
-import com.devsuperior.backend.dto.MovieDTO;
-import com.devsuperior.backend.entities.Movie;
-import com.devsuperior.backend.repositories.MovieRepository;
+import com.devsuperior.wilsonmovies.dto.MovieDTO;
+import com.devsuperior.wilsonmovies.entities.Movie;
+import com.devsuperior.wilsonmovies.repositories.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 @Service
 public class MovieService {
