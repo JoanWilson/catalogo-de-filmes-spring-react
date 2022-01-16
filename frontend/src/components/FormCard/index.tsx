@@ -31,25 +31,26 @@ function FormCard({ movieId } : Props) {
         const score = (event.target as any).score.value; 
 
         if (!validateEmail(email)) {
-            window.alert('Esse email já foi usado!');
-            return;
-        }
-
-        const config: AxiosRequestConfig = {
-            baseURL: BASE_URL,
-            method: 'PUT',
-            url: '/scores',
-            data: {
-                email: email,
-                movieId: movieId,
-                score: score
+            return window.alert('Esse email não é válido!');
+        } else {
+            const config: AxiosRequestConfig = {
+                baseURL: BASE_URL,
+                method: 'PUT',
+                url: '/scores',
+                data: {
+                    email: email,
+                    movieId: movieId,
+                    score: score
+                }
             }
+    
+            axios(config).then(response => {
+                window.alert('Seu voto foi computado! Saiba que somente poderá ser feito um voto por e-mail');
+                navigate("/");
+            });
         }
 
-        axios(config).then(response => {
-            window.alert('Avaliado com sucesso!');
-            navigate("/");
-        });
+        
 
     }
 
